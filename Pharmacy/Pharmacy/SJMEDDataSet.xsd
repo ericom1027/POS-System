@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SJMEDDataSet" targetNamespace="http://tempuri.org/SJMEDDataSet.xsd" xmlns:mstns="http://tempuri.org/SJMEDDataSet.xsd" xmlns="http://tempuri.org/SJMEDDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SJMEDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SJMEDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Pharmacy.Properties.Settings.GlobalReference.Default.SJMEDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="viewGetDistributorsProductsTableAdapter" GeneratorDataComponentClassName="viewGetDistributorsProductsTableAdapter" Name="viewGetDistributorsProducts" UserDataComponentName="viewGetDistributorsProductsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SJMEDConnectionString (Settings)" DbObjectName="SJMED.dbo.viewGetDistributorsProducts" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Company_Name, Product_Description, Type_Of_Product, Quantity, Per, Unit_Price, Discount, Net_Price, Total_Amount, Expiry_Date FROM dbo.viewGetDistributorsProducts</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Company_Name" DataSetColumn="Company_Name" />
+              <Mapping SourceColumn="Product_Description" DataSetColumn="Product_Description" />
+              <Mapping SourceColumn="Type_Of_Product" DataSetColumn="Type_Of_Product" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Per" DataSetColumn="Per" />
+              <Mapping SourceColumn="Unit_Price" DataSetColumn="Unit_Price" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+              <Mapping SourceColumn="Net_Price" DataSetColumn="Net_Price" />
+              <Mapping SourceColumn="Total_Amount" DataSetColumn="Total_Amount" />
+              <Mapping SourceColumn="Expiry_Date" DataSetColumn="Date" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SJMEDDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SJMEDDataSet" msprop:Generator_UserDSName="SJMEDDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viewGetDistributorsProducts" msprop:Generator_TableClassName="viewGetDistributorsProductsDataTable" msprop:Generator_TableVarName="tableviewGetDistributorsProducts" msprop:Generator_TablePropName="viewGetDistributorsProducts" msprop:Generator_RowDeletingName="viewGetDistributorsProductsRowDeleting" msprop:Generator_RowChangingName="viewGetDistributorsProductsRowChanging" msprop:Generator_RowEvHandlerName="viewGetDistributorsProductsRowChangeEventHandler" msprop:Generator_RowDeletedName="viewGetDistributorsProductsRowDeleted" msprop:Generator_UserTableName="viewGetDistributorsProducts" msprop:Generator_RowChangedName="viewGetDistributorsProductsRowChanged" msprop:Generator_RowEvArgName="viewGetDistributorsProductsRowChangeEvent" msprop:Generator_RowClassName="viewGetDistributorsProductsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Company_Name" msprop:Generator_ColumnVarNameInTable="columnCompany_Name" msprop:Generator_ColumnPropNameInRow="Company_Name" msprop:Generator_ColumnPropNameInTable="Company_NameColumn" msprop:Generator_UserColumnName="Company_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Description" msprop:Generator_ColumnVarNameInTable="columnProduct_Description" msprop:Generator_ColumnPropNameInRow="Product_Description" msprop:Generator_ColumnPropNameInTable="Product_DescriptionColumn" msprop:Generator_UserColumnName="Product_Description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type_Of_Product" msprop:Generator_ColumnVarNameInTable="columnType_Of_Product" msprop:Generator_ColumnPropNameInRow="Type_Of_Product" msprop:Generator_ColumnPropNameInTable="Type_Of_ProductColumn" msprop:Generator_UserColumnName="Type_Of_Product">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:int" />
+              <xs:element name="Per" msprop:Generator_ColumnVarNameInTable="columnPer" msprop:Generator_ColumnPropNameInRow="Per" msprop:Generator_ColumnPropNameInTable="PerColumn" msprop:Generator_UserColumnName="Per">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit_Price" msprop:Generator_ColumnVarNameInTable="columnUnit_Price" msprop:Generator_ColumnPropNameInRow="Unit_Price" msprop:Generator_ColumnPropNameInTable="Unit_PriceColumn" msprop:Generator_UserColumnName="Unit_Price" type="xs:decimal" />
+              <xs:element name="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" msprop:Generator_UserColumnName="Discount" type="xs:int" minOccurs="0" />
+              <xs:element name="Net_Price" msprop:Generator_ColumnVarNameInTable="columnNet_Price" msprop:Generator_ColumnPropNameInRow="Net_Price" msprop:Generator_ColumnPropNameInTable="Net_PriceColumn" msprop:Generator_UserColumnName="Net_Price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total_Amount" msprop:Generator_ColumnVarNameInTable="columnTotal_Amount" msprop:Generator_ColumnPropNameInRow="Total_Amount" msprop:Generator_ColumnPropNameInTable="Total_AmountColumn" msprop:Generator_UserColumnName="Total_Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

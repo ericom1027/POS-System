@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{139CC630-4DFC-4282-A5D1-E1DFFE914B0B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pharmacy</RootNamespace>
+    <AssemblyName>Pharmacy</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Pharmacy.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetWSO1.cs">
+      <DependentUpon>DataSetWSO1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetWSO1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetWSO1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiscountController.cs" />
+    <Compile Include="Distributors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Distributors.Designer.cs">
+      <DependentUpon>Distributors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUpdateUser.Designer.cs">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiscount.Designer.cs">
+      <DependentUpon>frmDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainController.cs" />
+    <Compile Include="frmMonthlyDailyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonthlyDailyReport.Designer.cs">
+      <DependentUpon>frmMonthlyDailyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSJMEDProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSJMEDProducts.Designer.cs">
+      <DependentUpon>frmSJMEDProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSJMEDSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSJMEDSale.Designer.cs">
+      <DependentUpon>frmSJMEDSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSJMEDStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSJMEDStock.Designer.cs">
+      <DependentUpon>frmSJMEDStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStock.Designer.cs">
+      <DependentUpon>frmStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserLogin.Designer.cs">
+      <DependentUpon>frmUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistributorsController.cs" />
+    <Compile Include="frmVoid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoid.Designer.cs">
+      <DependentUpon>frmVoid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWholeSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWholeSale.Designer.cs">
+      <DependentUpon>frmWholeSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWholeSalePrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWholeSalePrice.Designer.cs">
+      <DependentUpon>frmWholeSalePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PharmacyModel.cs" />
+    <Compile Include="PharmacyProductsController.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegexValidation.cs" />
+    <Compile Include="SJMEDDataSet.cs">
+      <DependentUpon>SJMEDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SJMEDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJMEDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SJMEDDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJMEDDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SJMEDDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJMEDDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SJMEDDataSetBIRPharmacy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJMEDDataSetBIRPharmacy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SJMEDDataSetBIRWS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJMEDDataSetBIRWS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SJMEDDataSetDailyReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJMEDDataSetDailyReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SJMEDProductsController.cs" />
+    <Compile Include="SJMEDSaleController.cs" />
+    <Compile Include="SJMEDStockController.cs" />
+    <Compile Include="SJMEDWSODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SJMEDWSODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StockController.cs" />
+    <Compile Include="UserLoginController.cs" />
+    <Compile Include="VoidController.cs" />
+    <Compile Include="WholeSaleController.cs" />
+    <Compile Include="WholeSalePriceController.cs" />
+    <EmbeddedResource Include="BIRReport.rdlc" />
+    <EmbeddedResource Include="BIRSJMEDPharmacyReport.rdlc" />
+    <EmbeddedResource Include="Distributors.resx">
+      <DependentUpon>Distributors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpireShortageSJMEDProducts.rdlc" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUpdateUser.resx">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiscount.resx">
+      <DependentUpon>frmDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonthlyDailyReport.resx">
+      <DependentUpon>frmMonthlyDailyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSJMEDProducts.resx">
+      <DependentUpon>frmSJMEDProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSJMEDSale.resx">
+      <DependentUpon>frmSJMEDSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSJMEDStock.resx">
+      <DependentUpon>frmSJMEDStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStock.resx">
+      <DependentUpon>frmStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserLogin.resx">
+      <DependentUpon>frmUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVoid.resx">
+      <DependentUpon>frmVoid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWholeSale.resx">
+      <DependentUpon>frmWholeSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWholeSalePrice.resx">
+      <DependentUpon>frmWholeSalePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyDailyReport.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportWSOInvoice.rdlc" />
+    <EmbeddedResource Include="WholeSaleReport.rdlc" />
+    <None Include="app.config" />
+    <None Include="DataSetWSO1.xsc">
+      <DependentUpon>DataSetWSO1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetWSO1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetWSO1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetWSO1.xss">
+      <DependentUpon>DataSetWSO1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SJMEDDataSet.xsc">
+      <DependentUpon>SJMEDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJMEDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SJMEDDataSet.xss">
+      <DependentUpon>SJMEDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSet1.xsc">
+      <DependentUpon>SJMEDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJMEDDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SJMEDDataSet1.xss">
+      <DependentUpon>SJMEDDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSet2.xsc">
+      <DependentUpon>SJMEDDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJMEDDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SJMEDDataSet2.xss">
+      <DependentUpon>SJMEDDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSetBIRPharmacy.xsc">
+      <DependentUpon>SJMEDDataSetBIRPharmacy.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSetBIRPharmacy.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJMEDDataSetBIRPharmacy.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SJMEDDataSetBIRPharmacy.xss">
+      <DependentUpon>SJMEDDataSetBIRPharmacy.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSetBIRWS.xsc">
+      <DependentUpon>SJMEDDataSetBIRWS.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSetBIRWS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJMEDDataSetBIRWS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SJMEDDataSetBIRWS.xss">
+      <DependentUpon>SJMEDDataSetBIRWS.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSetDailyReport.xsc">
+      <DependentUpon>SJMEDDataSetDailyReport.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDDataSetDailyReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJMEDDataSetDailyReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SJMEDDataSetDailyReport.xss">
+      <DependentUpon>SJMEDDataSetDailyReport.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDWSODataSet.xsc">
+      <DependentUpon>SJMEDWSODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SJMEDWSODataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SJMEDWSODataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SJMEDWSODataSet.xss">
+      <DependentUpon>SJMEDWSODataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users3031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monthlysales.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daily.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weekly.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outofstock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expired.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neartoexpire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\distributor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pharmacy_distribution-512.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\products.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generate-reports-Icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok22k1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\void.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\void.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EIAT medical hub.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

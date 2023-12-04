@@ -1,0 +1,49 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Pharmacy.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DBConn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=NCS-260319GM05\SQLEXPRESS;Initial Catalog=SJMED;User ID=sa;Password=sql_2012</Value>
+    </Setting>
+    <Setting Name="intOutOfStock" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="strErrorLogsPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\SJMEDLogs\</Value>
+    </Setting>
+    <Setting Name="gifPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Lock.gif</Value>
+    </Setting>
+    <Setting Name="intThread" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="ReceiptNo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SJMED</Value>
+    </Setting>
+    <Setting Name="HomeConn" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server=WINDOWS10-EMIL\SQLEXPRESS; Database=SJMED; User Id=sa; Password=sql2008&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server=WINDOWS10-EMIL\SQLEXPRESS; Database=SJMED; User Id=sa; Password=sql2008</Value>
+    </Setting>
+    <Setting Name="NCSConn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=NCS-260319GM05\SQLEXPRESS;Initial Catalog=SJMED;User ID=sa;Password=sql2012</Value>
+    </Setting>
+    <Setting Name="SJMEDConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server=DESKTOP-DH7IANV\SQLEXPRESS; Database=SJMED; User Id=sa; Password=sql2008&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server=DESKTOP-DH7IANV\SQLEXPRESS; Database=SJMED; User Id=sa; Password=sql2008</Value>
+    </Setting>
+    <Setting Name="KeyAccount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3CA9F40C32FD</Value>
+    </Setting>
+    <Setting Name="ProductKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">S3CA-J9F4-M0C3-D2FD</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

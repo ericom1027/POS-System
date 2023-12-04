@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SJMEDDataSet1" targetNamespace="http://tempuri.org/SJMEDDataSet1.xsd" xmlns:mstns="http://tempuri.org/SJMEDDataSet1.xsd" xmlns="http://tempuri.org/SJMEDDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SJMEDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SJMEDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Pharmacy.Properties.Settings.GlobalReference.Default.SJMEDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="WholeSaleDailyMonthlyReportTableAdapter" GeneratorDataComponentClassName="WholeSaleDailyMonthlyReportTableAdapter" Name="WholeSaleDailyMonthlyReport" UserDataComponentName="WholeSaleDailyMonthlyReportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SJMEDConnectionString (Settings)" DbObjectName="SJMED.dbo.WholeSaleDailyMonthlyReport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DateOrder, Company_Name, InvoiceNo, Vatable, VAT, GrandTotal FROM dbo.WholeSaleDailyMonthlyReport</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DateOrder" DataSetColumn="DateOrder" />
+              <Mapping SourceColumn="Company_Name" DataSetColumn="Company_Name" />
+              <Mapping SourceColumn="InvoiceNo" DataSetColumn="InvoiceNo" />
+              <Mapping SourceColumn="Vatable" DataSetColumn="Vatable" />
+              <Mapping SourceColumn="VAT" DataSetColumn="VAT" />
+              <Mapping SourceColumn="GrandTotal" DataSetColumn="GrandTotal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SJMEDDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SJMEDDataSet1" msprop:Generator_UserDSName="SJMEDDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WholeSaleDailyMonthlyReport" msprop:Generator_TableClassName="WholeSaleDailyMonthlyReportDataTable" msprop:Generator_TableVarName="tableWholeSaleDailyMonthlyReport" msprop:Generator_TablePropName="WholeSaleDailyMonthlyReport" msprop:Generator_RowDeletingName="WholeSaleDailyMonthlyReportRowDeleting" msprop:Generator_RowChangingName="WholeSaleDailyMonthlyReportRowChanging" msprop:Generator_RowEvHandlerName="WholeSaleDailyMonthlyReportRowChangeEventHandler" msprop:Generator_RowDeletedName="WholeSaleDailyMonthlyReportRowDeleted" msprop:Generator_UserTableName="WholeSaleDailyMonthlyReport" msprop:Generator_RowChangedName="WholeSaleDailyMonthlyReportRowChanged" msprop:Generator_RowEvArgName="WholeSaleDailyMonthlyReportRowChangeEvent" msprop:Generator_RowClassName="WholeSaleDailyMonthlyReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DateOrder" msprop:Generator_ColumnVarNameInTable="columnDateOrder" msprop:Generator_ColumnPropNameInRow="DateOrder" msprop:Generator_ColumnPropNameInTable="DateOrderColumn" msprop:Generator_UserColumnName="DateOrder" type="xs:dateTime" />
+              <xs:element name="Company_Name" msprop:Generator_ColumnVarNameInTable="columnCompany_Name" msprop:Generator_ColumnPropNameInRow="Company_Name" msprop:Generator_ColumnPropNameInTable="Company_NameColumn" msprop:Generator_UserColumnName="Company_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InvoiceNo" msprop:Generator_ColumnVarNameInTable="columnInvoiceNo" msprop:Generator_ColumnPropNameInRow="InvoiceNo" msprop:Generator_ColumnPropNameInTable="InvoiceNoColumn" msprop:Generator_UserColumnName="InvoiceNo" type="xs:int" minOccurs="0" />
+              <xs:element name="Vatable" msprop:Generator_ColumnVarNameInTable="columnVatable" msprop:Generator_ColumnPropNameInRow="Vatable" msprop:Generator_ColumnPropNameInTable="VatableColumn" msprop:Generator_UserColumnName="Vatable" type="xs:decimal" />
+              <xs:element name="VAT" msprop:Generator_ColumnVarNameInTable="columnVAT" msprop:Generator_ColumnPropNameInRow="VAT" msprop:Generator_ColumnPropNameInTable="VATColumn" msprop:Generator_UserColumnName="VAT" type="xs:decimal" />
+              <xs:element name="GrandTotal" msprop:Generator_ColumnVarNameInTable="columnGrandTotal" msprop:Generator_ColumnPropNameInRow="GrandTotal" msprop:Generator_ColumnPropNameInTable="GrandTotalColumn" msprop:Generator_UserColumnName="GrandTotal" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
